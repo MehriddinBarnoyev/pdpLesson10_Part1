@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/main.min.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+
+    .album-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .album-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .album-card h2 {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .album-card p {
+        font-size: 14px;
+        color: #777;
+    }
+</style>
+
+<body>
+
+    <aside class="px-3 py-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/FRONT3X-Logo.png" class="w-75 mb-5" alt="">
+        <ul class="menu">
+            <li><a href="../index.html">Users</a></li>
+            <li><a href="../todo app 1/index.html">Todos</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="../photos.html">Photos</a></li>
+            <li class="active"><a href="#">Album</a></li>
+        </ul>
+    </aside>
+
+    <div id="rightside">
+        <header class="shadow p-3 bg-white">
+            <button class="btn"><i class="fas fa-bars"></i></button>
+        </header>
+        <main class="px-3 py-4">
+            <h1 class="mb-5">Album</h1>
+
+
+            <div class="d-flex mb-5 gap-2">
+                <input type="text" class="form-control" placeholder="Nechta rasm kerak">
+                <button class="btn btn-primary" onclick="showAlbum()"> <i class="fas fa-plus"></i></button>
+            </div>
+            <div id="album-container" class="album-container"></div>
+        </main>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
